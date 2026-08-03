@@ -23,3 +23,29 @@ nav a.active {
   background-color: #04AA6D;
   color: white;
 }
+
+body, html {
+    height: 100%;
+}
+
+/* hero image */
+.hero-image {
+  padding: 80px;
+  margin-left: 600px;
+  margin-right: 100px;
+  margin-top: 200px;
+  margin-bottom: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-80%, -70%);
+  color: black;
+  font-size: xxx-large;
+}
