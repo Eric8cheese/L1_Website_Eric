@@ -1,4 +1,9 @@
-/* navigation bar for website */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+
+* {
+ font-family: 'Roboto Mono';
+}
+
 nav {
   background-color: #333;
   overflow: hidden;
@@ -28,7 +33,6 @@ body, html {
     height: 100%;
 }
 
-/* hero image */
 .hero-image {
   padding: 80px;
   margin-left: 600px;
@@ -38,6 +42,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
+  text-shadow: 1px 1px 2px #FF0000;
 }
 
 .hero-text {
@@ -45,7 +50,27 @@ body, html {
   position: absolute;
   top: 20%;
   left: 20%;
-  transform: translate(-80%, -70%);
+  transform: translate(-70%, -70%);
   color: black;
   font-size: xxx-large;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: rgb(0, 0, 140);
+    border-radius: 5px;
+}
+
+.card-text {
+    text-align: center;
+    color: whitesmoke;
 }
