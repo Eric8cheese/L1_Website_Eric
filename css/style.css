@@ -86,9 +86,16 @@ body, html {
     color: whitesmoke;
 }
 
+.card:hover{
+  
+}
+
 #half-bar {
   text-align: center;
-  color: white;
+  color: #22491D;
+  background-color: #F9F9F9;
+  padding: 50px;
+  font-size: x-large;
 }
 
 footer {
@@ -98,4 +105,22 @@ footer {
     padding-bottom: 30px;
     margin-top: 50px;
     text-align: center;
+}
+
+.hero-image-subpages {
+    background-image: url("./MyScotlandResources/images/scotland-1987599_1280.jpg");
+    height: 352px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text-subpages {
+    color: whitesmoke;
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
 }
