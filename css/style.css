@@ -7,16 +7,19 @@
 nav {
   background-color: #ffff;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 nav a {
   float: left;
   color: #22491D;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
-  width: 100%;
 }
 
 nav a:hover {
@@ -35,7 +38,7 @@ body, html {
 
 .hero-image {
   padding: 80px;
-  margin-left: 600px;
+  margin-left: 700px;
   margin-right: 100px;
   margin-top: 200px;
   margin-bottom: auto;
@@ -79,11 +82,20 @@ body, html {
 .card {
     background-color: #22491D;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-text {
     text-align: center;
     color: whitesmoke;
+    margin-top: 9px;
+}
+
+.card img {
+    width: 100%;
+    height: 1300px;
+    object-fit: cover;
 }
 
 .card:hover{
@@ -96,6 +108,7 @@ body, html {
   background-color: #F9F9F9;
   padding: 50px;
   font-size: x-large;
+  width: 100%;
 }
 
 footer {
