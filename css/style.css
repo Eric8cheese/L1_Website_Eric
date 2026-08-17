@@ -68,6 +68,7 @@ body, html {
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: #F9F9F9;
+    font-size: x-large;
 }
 
 .two-column-selector {
@@ -155,4 +156,8 @@ footer {
 
 .scroll-element.show {
   opacity: 1;
+}
+
+h1 {
+  color: #22491D;
 }
