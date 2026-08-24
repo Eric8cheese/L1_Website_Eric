@@ -138,10 +138,10 @@ footer {
 .hero-text-subpages {
   color: #22491D;
   position: absolute;
-  top: 180px;
+  top: 400px;
   width: 100%;
   text-align: center;
-  font-size: 4rem;
+  font-size: 8rem;
 }
 
 @keyframes fadeIn {
