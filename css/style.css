@@ -122,19 +122,6 @@ footer {
   text-align: center;
 }
 
-.mud-video-wrapper {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  min-width: 991.99px;
-  height: auto;
-  overflow-x: hidden;
-  z-index: -999;
-  height: 1300px;
-}
-
 .hero-text-subpages {
   color: #22491D;
   position: absolute;
