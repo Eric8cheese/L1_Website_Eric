@@ -4,9 +4,14 @@
  font-family: 'Roboto Mono';
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 nav {
   background-color: #fafafa;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,9 +113,15 @@ body, html {
   text-align: center;
   color: #22491D;
   background-color: #F9F9F9;
-  padding: 50px;
+  padding: 10px;
   font-size: x-large;
   width: 100%;
+}
+
+nav.second-nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
 }
 
 footer {
