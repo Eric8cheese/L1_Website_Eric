@@ -53,7 +53,10 @@ body, html {
   background-size: 100%;
   position: relative;
   text-shadow: 2px 2px 2px #22491D;
-  border-radius: 50%;
+}
+
+.hero-image img {
+  border-radius: 25px;
 }
 
 .hero-text {
@@ -70,20 +73,36 @@ body, html {
 .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  width: 100%;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  gap: 30px;
+  margin: 50px auto;
+  max-width: 95%;
   background-color: #F9F9F9;
   font-size: x-large;
+  text-align: left;
 }
+
+/* moves the text in the two columns closer the center */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* fixes the gap between elements */
+.info h1 {
+  margin-bottom: 8px; /* Reduce space below the header (adjust px to taste) */
+}
+
+.info p {
+  margin-top: 0; /* Remove default space above the paragraph */
+}
+
 
 /* this is for the two columns at the bottom of the index */
 .two-column-selector {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 60px;
   width: 80%;
   margin: auto;
   margin-top: 50px;
@@ -92,7 +111,7 @@ body, html {
 
 .card {
   background-color: #22491D;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -105,8 +124,9 @@ body, html {
 
 .card img {
   width: 100%;
-  height: 1300px;
+  height: 900px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .card:hover{
@@ -142,13 +162,15 @@ footer {
 .hero-text-subpages {
   color: #22491D;
   position: absolute;
-  top: 400px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
   font-size: 8rem;
 }
 
-/* fade in affect for hero section */
+/* fade in effect for hero section */
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -170,4 +192,29 @@ footer {
 
 h1 {
   color: #22491D;
+}
+
+/* Reset body defaults */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* force subpage video to fill screen */
+.hero-video {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.hero-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image img{
+  border-radius: 10px;
 }
